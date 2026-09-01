@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="445.0" prefWidth="651.0" style="-fx-background-color: #528560;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.SignController">
+   <children>
+      <AnchorPane fx:id="SignUpPage" layoutX="21.0" layoutY="17.0" prefHeight="412.0" prefWidth="610.0" style="-fx-background-color: #e8e1e3;" visible="false" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="17.0">
+         <children>
+            <Text fill="#528560" fontSmoothingType="LCD" layoutX="147.0" layoutY="76.0" stroke="#528560" strokeDashOffset="10.0" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="10.0" text="Create your account" wrappingWidth="306.294921875">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+            <TextField fx:id="SignUpUsernameText" layoutX="54.0" layoutY="118.0" promptText="Username" style="-fx-background-radius: 20;" />
+            <TextField fx:id="SignUpFirstNameText" layoutX="244.0" layoutY="118.0" prefHeight="25.0" prefWidth="149.0" promptText="First Name" style="-fx-background-radius: 20;" />
+            <PasswordField fx:id="SignUpPasswordText" layoutX="54.0" layoutY="188.0" promptText="Password" style="-fx-background-radius: 20;" />
+            <PasswordField fx:id="SignUpRepeatPasswordText" layoutX="54.0" layoutY="222.0" promptText="Repeat Password" style="-fx-background-radius: 20;" />
+            <TextField fx:id="SignUpEmailText" layoutX="243.0" layoutY="188.0" prefHeight="31.0" prefWidth="306.0" promptText="Email" style="-fx-background-radius: 20;" />
+            <TextField fx:id="SignUpPhoneNumberText" layoutX="243.0" layoutY="222.0" prefHeight="31.0" prefWidth="306.0" promptText="Phone Number" style="-fx-background-radius: 20;" />
+            <Button fx:id="SignUpsignupbutton" layoutX="185.0" layoutY="290.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="230.0" style="-fx-background-radius: 20;" styleClass="signup-btn" stylesheets="@../../../../java/com/example/demo1/Beauty.css" text="Sign Up" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Reflection fraction="0.0" topOpacity="0.0">
+                     <input>
+                        <InnerShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </InnerShadow>
+                     </input>
+                  </Reflection>
+               </effect>
+            </Button>
+            <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="20.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../final_project/AP-Final-Project-lab/src/main/resources/com/example/finalproject/images/3289576_user_icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="20.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../final_project/AP-Final-Project-lab/src/main/resources/com/example/finalproject/images/1564520_code_open_password_icon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="SignUpLastNameText" layoutX="396.0" layoutY="118.0" prefHeight="25.0" prefWidth="149.0" promptText="Last Name" style="-fx-background-radius: 20;" />
+            <Hyperlink fx:id="SignUpalreadyhaveanaccountButton" layoutX="229.0" layoutY="324.0" onAction="#switchForm" text="Already have an account?" textFill="#346b41" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="SignInPage" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane layoutX="-8.0" layoutY="-10.0" prefHeight="445.0" prefWidth="641.0" style="-fx-background-color: #e8e1e3;" stylesheets="@Beauty.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-8.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-10.0">
+               <children>
+                  <Text layoutX="29.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign In" wrappingWidth="75.41015625">
+                     <font>
+                        <Font name="AdobeKaitiStd-Regular" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="28.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="username">
+                     <font>
+                        <Font name="AdobeFanHeitiStd-Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="SignInUsernameText" layoutX="29.0" layoutY="113.0" prefHeight="25.0" prefWidth="243.0" promptText="Username" style="-fx-background-radius: 20;" styleClass="textfield" stylesheets="@../../../../java/com/example/demo1/Beauty.css">
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+                  <Text layoutX="29.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="password">
+                     <font>
+                        <Font name="AdobeFanHeitiStd-Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="SignInsigningbutton" layoutX="29.0" layoutY="221.0" mnemonicParsing="false" onAction="#onSignInButtonClicked" prefHeight="30.0" prefWidth="243.0" style="-fx-background-radius: 20;" styleClass="login-btn" stylesheets="@../../../../java/com/example/demo1/Beauty.css" text="Sign In" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="0.0" radius="0.0" width="0.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="SignInForgotPasswordButton" layoutX="154.0" layoutY="254.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: #e8e1e3;" text="Forgot Password">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <RadioButton fx:id="SignInCaptchaButton" layoutX="28.0" layoutY="260.0" mnemonicParsing="false" style="-fx-background-color: #e8e1e3; -fx-border-insets: 20;" text="I'm not a robot">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </RadioButton>
+                  <PasswordField fx:id="SignInPasswordText" layoutX="33.0" layoutY="175.0" prefHeight="25.0" prefWidth="243.0" promptText="Password" style="-fx-background-radius: 20;" styleClass="textfield" stylesheets="@../../../../java/com/example/demo1/Beauty.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="327.0" layoutY="-10.0" prefHeight="445.0" prefWidth="338.0" styleClass="bg-form">
+               <children>
+                  <Text fill="WHITE" fontSmoothingType="LCD" layoutX="41.0" layoutY="134.0" nodeOrientation="RIGHT_TO_LEFT" strokeLineCap="BUTT" strokeType="INSIDE" strokeWidth="0.0" text="Welcome to login" wrappingWidth="256.0">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Text>
+                  <Text fill="WHITE" layoutX="92.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="SignInSignUpButton" cache="true" layoutX="140.0" layoutY="190.0" mnemonicParsing="false" onAction="#switchForm" style="-fx-background-radius: 20;" styleClass="login-btn" stylesheets="@../../../../java/com/example/demo1/Beauty.css" text="Sign Up" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <stylesheets>
+                  <URL value="@../../../../java/com/example/demo1/Beauty.css" />
+                  <URL value="@Beauty.css" />
+               </stylesheets>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

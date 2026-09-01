@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="648.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.CoinPages.TomanChartController">
+    <LineChart fx:id="lineChart" layoutX="53.0" layoutY="68.0" prefHeight="400.0" prefWidth="636.0">
+        <xAxis>
+            <NumberAxis label="Hours" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" label="Price" />
+        </yAxis>
+    </LineChart>
+    <AnchorPane layoutX="89.0" layoutY="468.0" prefHeight="101.0" prefWidth="600.0" styleClass="anchor-pane" stylesheets="@beautiHomePage.css">
+        <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Highest Price:" />
+            <Label layoutX="14.0" layoutY="51.0" text="Lowest Price" />
+            <Label layoutX="286.0" layoutY="14.0" text="Change Percentage:" />
+            <Label layoutX="286.0" layoutY="51.0" text="Price:" />
+            <Label fx:id="HighestPrice" layoutX="99.0" layoutY="14.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="LowestPrice" layoutX="87.0" layoutY="51.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="Price" layoutX="321.0" layoutY="51.0" prefHeight="17.0" prefWidth="170.0" />
+            <Label fx:id="ChangePercentage" layoutX="400.0" layoutY="14.0" prefHeight="17.0" prefWidth="170.0" />
+        </children>
+    </AnchorPane>
+    <AnchorPane prefHeight="17.0" prefWidth="777.0" styleClass="bg-form" stylesheets="@Beauty.css" />
+    <AnchorPane layoutX="-5.0" layoutY="16.0" prefHeight="632.0" prefWidth="58.0" style="-fx-background-color: #528560;" />
+    <AnchorPane layoutX="719.0" layoutY="16.0" prefHeight="632.0" prefWidth="58.0" style="-fx-background-color: #70f026;" />
+    <AnchorPane layoutY="583.0" prefHeight="65.0" prefWidth="777.0" styleClass="bg-form" stylesheets="@Beauty.css" />
+    <Label layoutX="352.0" layoutY="9.0" text="Toman">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+   <Button fx:id="minuteChange" layoutX="191.0" layoutY="44.0" mnemonicParsing="false" onAction="#switchSitu" styleClass="edit-button" stylesheets="@beautiHomePage.css" text="minute change" />
+   <Button fx:id="DailyChange" layoutX="352.0" layoutY="44.0" mnemonicParsing="false" onAction="#switchSitu" styleClass="edit-button" stylesheets="@beautiHomePage.css" text="daily change" />
+   <Button fx:id="MonthluChange" layoutX="514.0" layoutY="44.0" mnemonicParsing="false" onAction="#switchSitu" styleClass="edit-button" stylesheets="@beautiHomePage.css" text="monthly change" />
+</AnchorPane>
