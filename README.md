@@ -1,4 +1,4 @@
-# ArmanReza Exchange
+# Multi-Currency Exchange
 
 JavaFX desktop application for a multi-currency exchange platform — university advanced programming project (Ferdowsi University of Mashhad).
 
