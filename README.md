@@ -100,7 +100,8 @@ src/main/resources/
 
 ## Authors
 
-**Arman Bijari** & **Reza** — [GitHub](https://github.com/ArmanBjr)
+- **Arman Bijari** — [GitHub](https://github.com/ArmanBjr)
+-  **Reza Farasati** — [GitHub](https://github.com/Rfarasati)
 
 ## License
 
