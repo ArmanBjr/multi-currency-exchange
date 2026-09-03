@@ -1,6 +1,8 @@
 # Multi-Currency Exchange
 
-JavaFX desktop application for a multi-currency exchange platform — university advanced programming project (Ferdowsi University of Mashhad).
+> **Course project** — Advanced Programming, Ferdowsi University of Mashhad, Spring 2024
+
+JavaFX desktop application for a multi-currency exchange platform.
 
 Users can register, sign in, manage a wallet, trade currencies (USD, EUR, GBP, Toman, Yen), view charts, place orders, and reset passwords via email.
 
