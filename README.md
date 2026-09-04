@@ -1,6 +1,6 @@
 # Multi-Currency Exchange
 
-> **Course project** — Advanced Programming, Ferdowsi University of Mashhad, Spring 2024
+> **Course project** — Advanced Programming, Ferdowsi University of Mashhad, Spring 2024 (2nd semester)
 
 JavaFX desktop application for a multi-currency exchange platform.
 
